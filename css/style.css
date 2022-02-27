@@ -1,0 +1,23 @@
+.package-btn{
+    color: #3F87F5;
+    background-color: #f8c7e0;
+    border: none;
+    margin: 10px 0px;
+}
+.check-color{
+    color: #5243C2;
+}
+.package-color{
+    color: #231D4F;
+}
+.package-title{
+    margin: 50px 0px 100px 0px;
+}
+.big-card{
+    border-radius: 30px!important;
+    background-color: #3F87F5;
+    color: white;
+}
+.badge-custom{
+    left: 80%;
+}
