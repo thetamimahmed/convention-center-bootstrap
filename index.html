@@ -27,7 +27,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Abouts us</a>
+                    <a class="nav-link" href="#">About us</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Contact us</a>
@@ -94,7 +94,19 @@
           </section>
     </header>
     <!-- header end -->
-    
+
+    <!-- toast start -->
+    <div class="toast show ms-auto mt-2 toast-border" role="alert" aria-live="assertive" aria-atomic="true">
+      
+      <div class="text-end">
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="d-flex justify-content-between align-items-center ps-2">
+        <p class="text-primary fs-5"><i class="bi bi-gift"></i></p>
+        <p>20% off on next booking</p>
+      </div>
+    </div>
+
     <!-- main start -->
     <main class="container">
         <!-- moment section  -->
@@ -259,18 +271,54 @@
                 </div>
             </div>
         </section>
+        <!-- booking section  -->
+        <section class="py-5">
+          <h2 class="text-center my-5">Book Your Date</h2>
+          <div class="row">
+            <div class="col-lg-7">
+              <form action="" class="mb-3">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingName" placeholder="Your Name" required>
+                  <label for="floatingName">Your Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="d-md-flex justify-content-between ">
+                  <div class="form-floating grp-input w-75 me-3 mb-3">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                      <option selected>Select Shift</option>
+                      <option value="1">Day</option>
+                      <option value="2">Night</option>
+                    </select>
+                    <label for="floatingSelect">Event Shift</label>
+                  </div>
+                  <div class="form-floating grp-input w-75 mb-3">
+                    <input type="tel" class="form-control" id="floatingPhone" placeholder="Phone" required>
+                    <label for="floatingPhone">Phone</label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary px-4 text-black fw-bold bg-warning border-0 me-4">Book Now</button>
+              </form>
+            </div>
+            <div class="col-lg-5">
+              <img src="images/book.jpg" class="img-fluid rounded-3" alt="">
+            </div>
+          </div>
+        </section>
     </main>
     <!-- main end -->
     <!-- footer start  -->
     <footer class="bg-dark p-5">
-        <div class="d-flex justify-content-between align-items-center">
+        <div class="d-md-flex justify-content-between align-items-center">
             <div>
-                <p class="text-white">© 2022 Tamim. All rights reserved</p>
+                <p class="text-white text-center">© 2022 Tamim. All rights reserved</p>
             </div>
             <div>
-                <h3 class="text-white">Get The App</h3>
-                <a href="https://apps.apple.com/us/app/picsart-photo-video-editor/id587366035" target="_blank"><img src="images/appstore.png" width="135px" class="rounded-3 me-2" alt=""></a>
-                <a href="https://play.google.com/store/apps/details?id=com.greetingsisland.sam&hl=en&gl=US" target="_blank"><img src="images/playstore.png" width="135px" class="rounded-3" alt=""></a>
+                <h5 class="text-white text-center ">Get The App</h5>
+                <a class="d-block text-center mt-2" href="https://apps.apple.com/us/app/picsart-photo-video-editor/id587366035" target="_blank"><img src="images/appstore.png" width="135px" class="rounded-3 mb-2" alt=""></a>
+                <a class="d-block text-center mt-2" href="https://play.google.com/store/apps/details?id=com.greetingsisland.sam&hl=en&gl=US" target="_blank"><img src="images/playstore.png" width="135px" class="rounded-3 mb-2" alt=""></a>
             </div>
         </div>
     </footer>

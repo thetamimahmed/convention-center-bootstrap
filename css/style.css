@@ -21,3 +21,20 @@
 .badge-custom{
     left: 80%;
 }
+.toast-border{
+    border-left: 5px solid #3F87F5;
+}
+
+@media only screen and (max-width:760px) {
+    .package-title{
+        margin:25px 0px;
+    }
+    .grp-input{
+        width: 100%!important;
+    }
+}
+@media only screen and (max-width:769px) {
+    .grp-input{
+        width: 100%!important;
+    }
+}
